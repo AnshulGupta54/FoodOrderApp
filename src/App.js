@@ -3,6 +3,7 @@ import Header from "./components/Layout/Header";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
+import Login from "./components/Authentication/Login";
 function App() {
   const [cartShow,setCartShow]= useState(false);
 
@@ -20,7 +21,9 @@ function App() {
       <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
+
       </main>
+      <Login />
     </CartProvider>
   );
 }

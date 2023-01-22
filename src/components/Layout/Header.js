@@ -5,10 +5,11 @@ import HeaderCartButton from "./HeaderCartButton";
 import mealsImage from '../../assests/meals.jpg';
 
 const Header=props=>{
+    const name=localStorage.getItem("Name");
 
     return <React.Fragment>
     <header className={classes.header}>
-    <h1>React Meals</h1>
+    <h1>Hello {name}</h1>
     <HeaderCartButton onClick={props.onShowCart} />
     </header>
     <div className={classes['main-image']}>
