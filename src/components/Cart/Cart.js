@@ -29,7 +29,7 @@ const Cart=props=>{
 
     const submitHandler=async (userData)=>{
         setIsSubmitting(true);
-        await fetch('https://react-http-114a4-default-rtdb.firebaseio.com/orders.json',{
+        await fetch('https://food-order-60d4e-default-rtdb.firebaseio.com/orders.json',{
             method: 'POST',
             body : JSON.stringify({
                 user: userData,
